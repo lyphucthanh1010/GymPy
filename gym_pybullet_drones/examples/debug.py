@@ -12,7 +12,7 @@ TEXT = -1
 
 if __name__ == "__main__":
 
-    PYB_CLIENT = p.connect(p.GUI, key=0); p.setRealTimeSimulation(0, physicsClientId=PYB_CLIENT); p.setTimeStep(1/240, physicsClientId=PYB_CLIENT)
+    PYB_CLIENT = p.connect(p.DIRECT, key=0); p.setRealTimeSimulation(0, physicsClientId=PYB_CLIENT); p.setTimeStep(1/240, physicsClientId=PYB_CLIENT)
     p.resetDebugVisualizerCamera(cameraDistance=3, cameraYaw=-30, cameraPitch=-30, cameraTargetPosition=[0.0,0.0,0.0], physicsClientId=PYB_CLIENT)
     p.setGravity(0, 0, 0, physicsClientId=PYB_CLIENT) # Make objects weightless
 
